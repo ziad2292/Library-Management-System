@@ -1,0 +1,13 @@
+﻿<Window x:Class="Phase_2_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Phase_2_App"
+        mc:Ignorable="d"
+        Title="Library" Height="500" Width="800" Background="#FF8E7676">
+    <Grid x:Name="MainWindow1">
+        <TextBlock x:Name="Title" HorizontalAlignment="Left" Height="75" Margin="286,67,0,0" Text="Library Management System" VerticalAlignment="Top" Width="209" TextAlignment="Center" TextWrapping="Wrap" FontFamily="Bahnschrift SemiBold" FontSize="22" FontStyle="Italic"/>
+
+    </Grid>
+</Window>

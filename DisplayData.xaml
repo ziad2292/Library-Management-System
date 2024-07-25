@@ -1,0 +1,23 @@
+﻿<Window x:Class="Phase_2_App.DisplayData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Phase_2_App"
+        mc:Ignorable="d"
+        Title="Display Data" Height="500" Width="800" Background="#FF8E7676">
+    <Grid>
+        <TextBlock x:Name="Title" HorizontalAlignment="Left" Height="75" Margin="286,67,0,0" Text="Library Management System" VerticalAlignment="Top" Width="209" TextAlignment="Center" TextWrapping="Wrap" FontFamily="Bahnschrift SemiBold" FontSize="22" FontStyle="Italic"/>
+        <ComboBox x:Name="SearchType" HorizontalAlignment="Left" Height="33" Margin="594,139,0,0" VerticalAlignment="Top" Width="164" SelectionChanged="SearchType_SelectionChanged">
+            <ComboBoxItem Content="Admins"></ComboBoxItem>
+            <ComboBoxItem Content="students"></ComboBoxItem>
+            <ComboBoxItem Content="Books"></ComboBoxItem>
+            <ComboBoxItem Content="authors"></ComboBoxItem>
+            <ComboBoxItem Content="orders"></ComboBoxItem>
+            <ComboBoxItem Content="payments"></ComboBoxItem>
+        </ComboBox>
+        <DataGrid x:Name="Table" HorizontalAlignment="Left" Height="280" Margin="44,177,0,0" VerticalAlignment="Top" Width="727" d:ItemsSource="{Binding}"/>
+        <Button Content="Admin Page" HorizontalAlignment="Left" Height="28" Margin="44,139,0,0" VerticalAlignment="Top" Width="140" Click="Button_Click"/>
+
+    </Grid>
+</Window>

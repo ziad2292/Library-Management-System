@@ -1,0 +1,17 @@
+﻿<Window x:Class="Phase_2_App.StudentFunctions"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Phase_2_App"
+        mc:Ignorable="d"
+        Title="StudentFunctions" Height="500" Width="800" Background="#FF8E7676">
+    <Grid>
+        <TextBlock x:Name="Title" HorizontalAlignment="Left" Height="75" Margin="286,67,0,0" Text="Library Management System" VerticalAlignment="Top" Width="209" TextAlignment="Center" TextWrapping="Wrap" FontFamily="Bahnschrift SemiBold" FontSize="22" FontStyle="Italic"/>
+        <Button Content="Search Books" HorizontalAlignment="Left" Height="48" Margin="498,249,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click_1"/>
+        <TextBox x:Name="BookName" HorizontalAlignment="Left" Height="40" Margin="239,202,0,0" TextWrapping="Wrap" Text="Book Name" VerticalAlignment="Top" Width="126"/>
+        <Button Content="Borrow" Margin="239,309,435,131"  Background="#FF99EA83" RenderTransformOrigin="-0.854,3.443" Click="Button_Click"/>
+        <TextBox x:Name="Days" HorizontalAlignment="Left" Height="40" Margin="239,253,0,0" TextWrapping="Wrap" Text="Borrowing Days" VerticalAlignment="Top" Width="126"/>
+
+    </Grid>
+</Window>

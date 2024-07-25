@@ -1,0 +1,19 @@
+﻿<Window x:Class="Phase_2_App.Payment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Phase_2_App"
+        mc:Ignorable="d"
+        Title="StudentFunctions" Height="500" Width="800" Background="#FF8E7676">
+    <Grid>
+        <TextBlock x:Name="Title" HorizontalAlignment="Left" Height="75" Margin="286,67,0,0" Text="Library Management System" VerticalAlignment="Top" Width="209" TextAlignment="Center" TextWrapping="Wrap" FontFamily="Bahnschrift SemiBold" FontSize="22" FontStyle="Italic"/>
+        <ComboBox x:Name="method" HorizontalAlignment="Center" Height="20" Margin="0,262,0,0" VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.513,2.292">
+            <ComboBoxItem Content="Visa"></ComboBoxItem>
+            <ComboBoxItem Content="Cash"></ComboBoxItem>
+        </ComboBox>
+        <Button Content="Pay" HorizontalAlignment="Center" Height="46" Margin="0,342,0,0" VerticalAlignment="Top" Width="218" Background="#FF99EA83" FontSize="22" FontWeight="Bold" FontFamily="Bahnschrift SemiBold Condensed" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="304,212,0,0" TextWrapping="Wrap" Text="Payment Method" VerticalAlignment="Top" Width="174" FontSize="20" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

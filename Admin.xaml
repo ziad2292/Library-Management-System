@@ -1,0 +1,43 @@
+﻿<Window x:Class="Phase_2_App.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Phase_2_App"
+        mc:Ignorable="d"
+        Title="Admin" Height="500" Width="800" Background="#FF8E7676">
+    <Grid>
+        <TextBlock x:Name="Title" HorizontalAlignment="Left" Height="75" Margin="286,67,0,0" Text="Library Management System" VerticalAlignment="Top" Width="209" TextAlignment="Center" TextWrapping="Wrap" FontFamily="Bahnschrift SemiBold" FontSize="22" FontStyle="Italic"/>
+        <Button x:Name="AddBook" Content="Add Book" HorizontalAlignment="Left" Height="48" Margin="53,172,0,0" VerticalAlignment="Top" Width="67" RenderTransformOrigin="0.522,0.779" Click="AddBook_Click"/>
+        <Button x:Name="DeleteBook" Content="Delete Book" HorizontalAlignment="Left" Height="48" Margin="130,172,0,0" VerticalAlignment="Top" Width="68" Click="DeleteBook_Click" RenderTransformOrigin="3.598,4.388"/>
+        <Button Content="Search Books" HorizontalAlignment="Left" Height="48" Margin="624,418,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click_1"/>
+        <Button x:Name="UpdateBook" Content="Update Book Details" HorizontalAlignment="Left" Height="48" Margin="452,167,0,0" VerticalAlignment="Top" Width="156" Click="UpdateBook_Click"/>
+        <Button x:Name="UpdateStudent" Content="Update Student Details" HorizontalAlignment="Left" Height="48" Margin="634,167,0,0" VerticalAlignment="Top" Width="156" Click="UpdateStudent_Click"/>
+        <TextBox x:Name="BookName" HorizontalAlignment="Left" Height="20" Margin="58,237,0,0" TextWrapping="Wrap" Text="Book Name" VerticalAlignment="Top" Width="124" FontSize="14"/>
+        <TextBox x:Name="BookID" HorizontalAlignment="Left" Height="20" Margin="58,262,0,0" TextWrapping="Wrap" Text="Book ID" VerticalAlignment="Top" Width="124" FontSize="14"/>
+        <TextBox x:Name="AuthorID" HorizontalAlignment="Left" Height="20" Margin="58,287,0,0" TextWrapping="Wrap" Text="Book Author ID" VerticalAlignment="Top" Width="124" FontSize="14"/>
+        <TextBox x:Name="Publisher" HorizontalAlignment="Left" Height="20" Margin="58,312,0,0" TextWrapping="Wrap" Text="Publisher" VerticalAlignment="Top" Width="124" FontSize="14"/>
+        <TextBox x:Name="PublishYear" HorizontalAlignment="Left" Height="20" Margin="58,337,0,0" TextWrapping="Wrap" Text="Publish Year" VerticalAlignment="Top" Width="124" FontSize="14"/>
+        <TextBox x:Name="Genre" HorizontalAlignment="Left" Height="20" Margin="58,362,0,0" TextWrapping="Wrap" Text="Genre" VerticalAlignment="Top" Width="124" FontSize="14"/>
+        <TextBox x:Name="ISBN" HorizontalAlignment="Left" Height="20" Margin="58,387,0,0" TextWrapping="Wrap" Text="ISBN" VerticalAlignment="Top" Width="124" FontSize="14"/>
+        <TextBox x:Name="Fee" HorizontalAlignment="Left" Height="20" Margin="58,412,0,0" TextWrapping="Wrap" Text="Fee Per Day" VerticalAlignment="Top" Width="124" FontSize="14"/>
+        <TextBox x:Name="BookID1" HorizontalAlignment="Left" Height="20" Margin="468,242,0,0" TextWrapping="Wrap" Text="Book ID" VerticalAlignment="Top" Width="124" FontSize="14"/>
+        <TextBox x:Name="Fee1" HorizontalAlignment="Left" Height="20" Margin="468,266,0,0" TextWrapping="Wrap" Text="Fee Per Day" VerticalAlignment="Top" Width="124" FontSize="14"/>
+        <TextBox x:Name="Status" HorizontalAlignment="Left" Height="20" Margin="468,292,0,0" TextWrapping="Wrap" Text="Borrowing Status" VerticalAlignment="Top" Width="124" FontSize="14"/>
+        <TextBox x:Name="BorrowerID" HorizontalAlignment="Left" Height="20" Margin="468,316,0,0" TextWrapping="Wrap" Text="Borrower ID" VerticalAlignment="Top" Width="124" FontSize="14"/>
+        <TextBox x:Name="StudentID" HorizontalAlignment="Left" Height="20" Margin="650,242,0,0" TextWrapping="Wrap" Text="Student ID" VerticalAlignment="Top" Width="124" FontSize="14"/>
+        <ComboBox x:Name="Eligibility" HorizontalAlignment="Left" Height="20" Margin="650,292,0,0" VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.513,2.292">
+            <ComboBoxItem Content="Can Borrow"></ComboBoxItem>
+            <ComboBoxItem Content="Cant Borrow"></ComboBoxItem>
+        </ComboBox>
+        <TextBlock x:Name="Title_Copy" HorizontalAlignment="Left" Height="21" Margin="644,271,0,0" Text="Eligibility To Borrow" VerticalAlignment="Top" Width="136" TextAlignment="Center" TextWrapping="Wrap" FontFamily="Bahnschrift SemiBold" FontStyle="Italic"/>
+        <Button Content="Home Page" HorizontalAlignment="Left" Height="35" Margin="312,422,0,0" VerticalAlignment="Top" Width="257" Click="Button_Click"/>
+        <Button x:Name="AddAuthor" Content="Add Author" HorizontalAlignment="Left" Height="48" Margin="217,172,0,0" VerticalAlignment="Top" Width="140" Click="AddAuthor_Click"/>
+        <TextBox x:Name="AuthorName" HorizontalAlignment="Left" Height="20" Margin="225,237,0,0" TextWrapping="Wrap" Text="Author Name" VerticalAlignment="Top" Width="124" FontSize="14"/>
+        <TextBox x:Name="AuthorID1" HorizontalAlignment="Left" Height="20" Margin="225,262,0,0" TextWrapping="Wrap" Text="Author ID" VerticalAlignment="Top" Width="124" FontSize="14"/>
+        <Button x:Name="ViewDatabase" Content="View Database" HorizontalAlignment="Left" Height="48" Margin="624,368,0,0" VerticalAlignment="Top" Width="156" Click="ViewDatabase_Click"/>
+        <Button x:Name="DeleteStudent" Content="Delete Student" HorizontalAlignment="Left" Height="48" Margin="362,172,0,0" VerticalAlignment="Top" Width="68"  RenderTransformOrigin="3.598,4.388" Click="DeleteStudent_Click"/>
+        <TextBox x:Name="StudentIDDelete" HorizontalAlignment="Left" Height="20" Margin="362,237,0,0" TextWrapping="Wrap" Text="Student ID" VerticalAlignment="Top" Width="91" FontSize="14"/>
+
+    </Grid>
+</Window>
